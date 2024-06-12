@@ -28,6 +28,7 @@ a{
 /* header */
 header{
     background-color:#FF6900;
+    margin-bottom:40px;
 }
 .hdr-container{
     display:flex;
@@ -65,13 +66,13 @@ header{
     width:1000px;
     margin:auto;
     flex-wrap:wrap;
-
+    
 }
 
 .column1-3{
     width:calc((100% / 3) - 20px);
-    margin:40px 10px;
     cursor:pointer;
+    margin-left:20px;
 }
 
 .img-container > img{
@@ -135,6 +136,21 @@ header{
 
 .fav:hover{
     color:red;
+}
+
+.brand, .price, .discount-price{
+    font-size:0.85rem;
+}
+
+.brand, .old-price{
+    color:rgb(75, 74, 74);
+}
+.discount-price{
+    color:red;
+}
+
+.old-price{
+    text-decoration:line-through;
 }
 
 
