@@ -31,7 +31,7 @@ header{
 }
 .hdr-container{
     display:flex;
-    max-width:1300px;
+    width:1000px;
     margin:0 auto;
 }
 
@@ -60,6 +60,89 @@ header{
 
 /* main */
 
+.row{
+    display:flex;
+    width:1000px;
+    margin:auto;
+    flex-wrap:wrap;
+
+}
+
+.column1-3{
+    width:calc((100% / 3) - 20px);
+    margin:40px 10px;
+    cursor:pointer;
+}
+
+.img-container > img{
+    position:absolute;
+    top:0;
+    right:0;
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+
+.img-container{
+    position:relative;
+    height:500px;
+}
+
+.hover-img{
+    position:absolute;
+    top:0;
+    right:0;
+    opacity:0;
+    transition:2s;
+}
+
+.discount-box{
+    position:absolute;
+    z-index:1;
+    bottom:40px;
+}
+
+.discount-box > *{
+    display:inline-block;
+    font-size:0.8rem;
+}
+
+.info-container{
+    padding:5px 10px;
+    color:white;
+}
+
+.discount{
+    background-color:red;
+}
+
+.abt{
+    background-color:green;
+}
+
+.img-container:hover .hover-img{
+    opacity:1;
+}
+
+.fav{
+    position:absolute;
+    right:30px;
+    top:40px;
+    font-size:1.3rem;
+    cursor:pointer;
+}
+
+.fav:hover{
+    color:red;
+}
+
+
+
+
+
+
+
 
 /* footer */
 
@@ -76,5 +159,15 @@ header{
     border:1px dashed blue;
 
 } */
+.debug main .container .row{
+    background-color:red;
+
+}
+
+.debug main .container .row > .column1-3{
+    background-color:purple;
+    border: 1px solid black;
+
+}
 
 
