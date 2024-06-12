@@ -24,6 +24,12 @@ a{
     text-align:right;
 }
 
+li{
+    display:inline-block;
+    list-style:none;
+    padding:10px 5px;
+}
+
 
 /* header */
 header{
@@ -45,11 +51,7 @@ header{
     text-align:center;
 }
 
-.hdr-container .column1-4 > ul > li{
-    display:inline-block;
-    list-style:none;
-    padding:10px 5px;
-}
+
 
 .logo{
     height:40px;
@@ -161,8 +163,39 @@ header{
 
 
 /* footer */
+footer{
+    background-color:#1A1A1A;
+    margin-top:20px;
+    padding-top:20px;
+    min-height:100px;
+}
 
+.ftr-container{
+    width:1000px;
+    margin:auto;
+}
 
+.ftr-left h4{
+    font-size:1.2rem;
+    padding:0 5px;
+}
+
+.ftr-container > *{
+    color:white;
+    display:inline-block;
+}
+
+.ftr-left, .ftr-right{
+    width:calc((100% / 2) - 10px)
+}
+
+.ftr-left ul > li > a{
+    font-weight:300;
+}
+
+.ftr-right h5{
+    padding-right:5px;
+}
 /* debug */
 
 /* .debug header .hdr-container{
@@ -175,7 +208,7 @@ header{
     border:1px dashed blue;
 
 } */
-.debug main .container .row{
+/* .debug main .container .row{
     background-color:red;
 
 }
@@ -184,6 +217,6 @@ header{
     background-color:purple;
     border: 1px solid black;
 
-}
+} */
 
 
